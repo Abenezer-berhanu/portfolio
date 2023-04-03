@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="fav-icon" href="">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Abulo</title>
+  </head>
+  <body>
+    <section class="header" id="header">
+      <span id="logo"><h1>logo</h1></span>
+      <nav class="navbar nav-bar">
+        <a href="#Home" class="pointers">Home</a>
+        <a href="#About" class="pointers">About</a>
+        <a href="#Service" class="pointers">Service</a>
+        <a href="#Portfolio" class="pointers">Portfolio</a>
+        <a href="#Contact" class="pointers">Contact</a>
+      </nav>
+
+      <nav class="hid-nav">
+        <a href="#Home" class="pointers">Home</a>
+        <a href="#About" class="pointers">About</a>
+        <a href="#Service" class="pointers">Service</a>
+        <a href="#Portfolio" class="pointers">Portfolio</a>
+        <a href="#Contact" class="pointers">Contact</a>
+      </nav>
+    </section>
+    <i class="fa-solid fa-bars" id="humberger-menu"></i>
+    <i class="fa-solid fa-x" id="x-menu"></i>
+    <button id="L-screen-mode" title="change screen mode" style="cursor: pointer;">
+      <i class="fa-solid fa-sun"></i>
+    </button>
+    <button id="D-screen-mode"><i class="fa-solid fa-moon" style="cursor: pointer;"></i></button>
+    <!-- body section -->
+
+    <section class="home-body" id="Home">
+      <div class="home-text-section">
+        <h3 id="greeting">Hello, It's Me</h3>
+        <h1 id="developer-name">Abenezer Berhanu</h1>
+        <h3 id="developer-description">
+          And I'm a <span id="frontend">Frontend Developer</span>
+        </h3>
+        <p id="description">  
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ad
+          nisi dolorum itaque,
+        </p>
+        <div class="medias-button">
+          <button id="cv-download">Download CV</button>
+        </div>
+      </div>
+
+      <div class="home-image-section">
+        <img src="./images/john-doe-removebg-preview.png" alt="" />
+      </div>
+    </section>
+
+    <!-- about page -->
+
+    <section class="about_page" id="About">
+      <div id="about_image">
+        <img src="./images/john-doe-removebg-preview.png" alt="" />
+      </div>
+      <div id="about-description">
+        <h1 id="about-title">About <span>Me</span></h1>
+        <h3 id="about-skill">Frontend Developer</h3>
+        <p id="about-description">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod
+          porro obcaecati eum aspernatur corrupti temporibus voluptatibus sit,
+          consectetur eaque laudantium? Dicta quos error inventore enim odit
+          placeat fugiat ad? Voluptas esse ad omnis neque itaque possimus
+          blanditiis ex sint praesentium nisi quisquam amet, nesciunt quas
+          adipisci ratione impedit, consequatur pariatur corrupti, vero qui
+          inventore consequuntur a.
+          <span class="Read-more-txt"
+            >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod
+            porro obcaecati eum aspernatur corrupti temporibus voluptatibus sit,
+            consectetur eaque laudantium? Dicta quos error inventore enim odit
+            placeat fugiat ad? Voluptas esse ad omnis neque itaque possimus
+            blanditiis ex sint praesentium nisi quisquam amet, nesciunt quas
+            adipisci ratione impedit, consequatur pariatur corrupti, vero qui
+            inventore consequuntur a.</span
+          >
+        </p>
+        <a class="Read-more" style="cursor: pointer;">Read More</a>
+      </div>
+    </section>
+
+    <!-- services section -->
+
+    <section class="service" id="Service">
+      <div id="service-title">
+        <h1>Skill &<span> Service</span></h1>
+      </div>
+      <div class="service-cards">
+        <div id="card card1">
+          <i class="fa-solid fa-code"></i>
+          <h1 class="service-title">Web Development</h1>
+          <p class="service-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et odit
+            reiciendis dolores voluptatibus laborum ducimus est? Quaerat, cum.
+            Et, incidunt blanditiis voluptatum commodi totam excepturi voluptate
+            enim nisi velit necessitatibus.
+            <span class="Read-more-txt"
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod
+              porro obcaecati eum aspernatur corrupti temporibus voluptatibus
+              sit, consectetur eaque laudantium? Dicta quos error inventore enim
+              odit placeat fugiat ad? Voluptas esse ad omnis neque itaque
+              possimus blanditiis ex sint praesentium nisi quisquam amet,
+              nesciunt quas adipisci ratione impedit, consequatur pariatur
+              corrupti, vero qui inventore consequuntur a.</span
+            >
+          </p>
+          <a class="Read-more" style="cursor: pointer;">Read More</a>
+        </div>
+        <div id="card card2">
+          <i class="fa-solid fa-microphone-lines"></i>
+          <h1 class="service-title">Musician & Singer</h1>
+          <p class="service-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et odit
+            reiciendis dolores voluptatibus laborum ducimus est? Quaerat, cum.
+            Et, incidunt blanditiis voluptatum commodi totam excepturi voluptate
+            enim nisi velit necessitatibus.
+            <span class="Read-more-txt"
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod
+              porro obcaecati eum aspernatur corrupti temporibus voluptatibus
+              sit, consectetur eaque laudantium? Dicta quos error inventore enim
+              odit placeat fugiat ad? Voluptas esse ad omnis neque itaque
+              possimus blanditiis ex sint praesentium nisi quisquam amet,
+              nesciunt quas adipisci ratione impedit, consequatur pariatur
+              corrupti, vero qui inventore consequuntur a.</span
+            >
+          </p>
+          <a class="Read-more" style="cursor: pointer;">Read More</a>
+        </div>
+
+        <div id="card card3">
+          <i class="fa-solid fa-video"></i>
+          <h1 class="service-title">Content -Creator</h1>
+          <p class="service-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et odit
+            reiciendis dolores voluptatibus laborum ducimus est? Quaerat, cum.
+            Et, incidunt blanditiis voluptatum commodi totam excepturi voluptate
+            enim nisi velit necessitatibus.
+            <span class="Read-more-txt"
+              >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut quod
+              porro obcaecati eum aspernatur corrupti temporibus voluptatibus
+              sit, consectetur eaque laudantium? Dicta quos error inventore enim
+              odit placeat fugiat ad? Voluptas esse ad omnis neque itaque
+              possimus blanditiis ex sint praesentium nisi quisquam amet,
+              nesciunt quas adipisci ratione impedit, consequatur pariatur
+              corrupti, vero qui inventore consequuntur a.</span
+            >
+          </p>
+          <a class="Read-more" style="cursor: pointer;">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolios section -->
+
+    <section class="portfolio-wrapper" id="Portfolio">
+      <div id="portfolio-title">
+        <h1>Latest <span>Project</span></h1>
+      </div>
+      <div id="portfolio-images">
+        <div class="portfolio-images">
+          <img src="./images/drumKit.webp" alt="" />
+          <div class="hidden">
+            <h1>Drum kit</h1>
+            <p>
+              This Drum Kit app has been made using only HTML , CSS, and
+              Javascript and has only used a single page.
+            </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+        <div class="portfolio-images">
+          <img src="./images/password-extension.png" alt="" />
+          <div class="hidden">
+            <h1>Password Reminder</h1>
+            <p>
+              This Password Reminder app has been made using only HTML , CSS,
+              and Javascript and has only used a single page.
+            </p>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact section -->
+
+    <section class="contact" id="Contact">
+      <div id="contact-title">
+        <h1>Contact <span>Me!</span></h1>
+      </div>
+      <div class="submit">
+        <form action="submit">
+          <div class="input-box">
+            <input type="text" placeholder="Full Name" required />
+            <input type="text" placeholder="Email Adress" required />
+          </div>
+          <div class="input-box">
+            <input type="number" placeholder="Mobile Number" required />
+            <input type="text" placeholder="Email Subject" required />
+          </div>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Your Message..."
+          ></textarea>
+          <input type="submit" value="send message" id="send-btn" />
+        </form>
+      </div>
+    </section>
+
+    <!-- footer section -->
+
+    <section class="footer">
+      <div id="footer-text">
+        <p>&copy 2023 by abenu | abenuberhanu271@gmail.com</p>
+      </div>
+    </section>
+    <script src="portfolio.js"></script>
+  </body>
+</html>
