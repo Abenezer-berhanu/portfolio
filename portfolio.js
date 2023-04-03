@@ -75,4 +75,12 @@ for (let i = 0; i < readLess.length; i++) {
     readMoreBtn[i].style.display = "block";
     readLess[i].style.display = "none";
   });
+} 
+
+
+function visitPageDrum() {
+  window.location = "http://www.github.com/Abenezer-berhanu/MyDrumKit";
+}
+function visitPageExtension() {
+  window.location = "http://www.github.com/Abenezer-berhanu/personal_extension";
 }
