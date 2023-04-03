@@ -4,7 +4,8 @@ const xMenu = document.querySelector("#x-menu");
 const root = document.querySelector(":root");
 const LscreenMode = document.querySelector("#L-screen-mode");
 const DscreenMode = document.querySelector("#D-screen-mode");
-
+const readLess = document.querySelectorAll(".Read-less");
+console.log(readLess)
 var rootStyles = getComputedStyle(root);
 var mainBodyBg = rootStyles.getPropertyValue("--body-bg-color");
 var secondBodyBg = rootStyles.getPropertyValue("--second-bg-color");
@@ -57,11 +58,21 @@ xMenu.onclick = () => {
   xMenu.style.display = "none";
 };
 
+
 const readMoreTxt = document.querySelectorAll(".Read-more-txt");
 let readMoreBtn = document.querySelectorAll(".Read-more");
 
 for (let i = 0; i < readMoreTxt.length; i++) {
   readMoreBtn[i].addEventListener("click", function () {
     readMoreTxt[i].style.display = "inline";
+    readMoreBtn[i].style.display = "none";
+    readLess[i].style.display = "block"
+  });
+}
+for (let i = 0; i < readLess.length; i++) {
+  readLess[i].addEventListener("click", function () {
+    readMoreTxt[i].style.display = "none";
+    readMoreBtn[i].style.display = "block";
+    readLess[i].style.display = "none";
   });
 }
