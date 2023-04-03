@@ -5,7 +5,7 @@ const root = document.querySelector(":root");
 const LscreenMode = document.querySelector("#L-screen-mode");
 const DscreenMode = document.querySelector("#D-screen-mode");
 const readLess = document.querySelectorAll(".Read-less");
-console.log(readLess)
+console.log(readLess);
 var rootStyles = getComputedStyle(root);
 var mainBodyBg = rootStyles.getPropertyValue("--body-bg-color");
 var secondBodyBg = rootStyles.getPropertyValue("--second-bg-color");
@@ -58,7 +58,6 @@ xMenu.onclick = () => {
   xMenu.style.display = "none";
 };
 
-
 const readMoreTxt = document.querySelectorAll(".Read-more-txt");
 let readMoreBtn = document.querySelectorAll(".Read-more");
 
@@ -66,7 +65,7 @@ for (let i = 0; i < readMoreTxt.length; i++) {
   readMoreBtn[i].addEventListener("click", function () {
     readMoreTxt[i].style.display = "inline";
     readMoreBtn[i].style.display = "none";
-    readLess[i].style.display = "block"
+    readLess[i].style.display = "block";
   });
 }
 for (let i = 0; i < readLess.length; i++) {
@@ -75,12 +74,13 @@ for (let i = 0; i < readLess.length; i++) {
     readMoreBtn[i].style.display = "block";
     readLess[i].style.display = "none";
   });
-} 
-
+}
 
 function visitPageDrum() {
-  window.location = "http://www.github.com/Abenezer-berhanu/MyDrumKit";
+  window.open("http://www.github.com/Abenezer-berhanu/MyDrumKit", "_blank");
 }
 function visitPageExtension() {
-  window.location = "http://www.github.com/Abenezer-berhanu/personal_extension";
+  window.open(
+    "http://www.github.com/Abenezer-berhanu/personal_extension", "_blank"
+  );
 }
